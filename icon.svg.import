@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cvbty5vm1rw6t"
-path="res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex"
+path="res://.godot/imported/icon.svg-db0c3d9bfa36c10d01a1032555ab68d3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://icon.svg"
-dest_files=["res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex"]
+source_file="res://addons/2025_11_11_gdp_wow_int/icon.svg"
+dest_files=["res://.godot/imported/icon.svg-db0c3d9bfa36c10d01a1032555ab68d3.ctex"]
 
 [params]
 
