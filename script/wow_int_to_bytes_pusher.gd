@@ -83,6 +83,10 @@ func push_with_local_delay_integer_value_in_milliseconds(integer_value: int, mil
 	)
 	bytes_delayer.add_delay_by_milliseconds(bytes, milliseconds_delay)
 	debug_text("i:" + str(integer_value)+" delay:" + str(milliseconds_delay))
+
+func push_with_local_delay_integer_value_in_seconds(integer_value: int, seconds_delay: float) -> void:
+	push_with_local_delay_integer_value_in_milliseconds(integer_value, seconds_delay*1000)
+
 	
 
 # NOTE: Renamed this one to avoid duplicate function name
@@ -95,15 +99,6 @@ func push_with_local_delay_player_index_and_integer_value_in_milliseconds(player
 	bytes_delayer.add_delay_by_milliseconds(bytes, milliseconds_delay)
 	debug_text("pi:" + str(player_index) + " Vi:" + str(integer_value)+" delay:" + str(milliseconds_delay))
 
-func push_with_local_delay_integer_value_in_seconds(integer_value: int, seconds_delay: float) -> void:
-	var milliseconds_delay: int = int(seconds_delay * 1000.0)
-	var bytes = WowUtility.parse_to_bytes_iid_current_time(
-		default_player_claim_index,
-		integer_value,
-		get_ntp_utc_timestamp_milliseconds() + milliseconds_delay
-	)
-	bytes_delayer.add_delay_by_milliseconds(bytes, milliseconds_delay)
-	debug_text("i:" + str(integer_value)+" delay:" + str(milliseconds_delay))
 
 func push_with_local_delay_player_index_and_integer_value_in_seconds(player_index: int, integer_value: int, seconds_delay: float) -> void:
 	var milliseconds_delay: int = int(seconds_delay * 1000.0)
@@ -114,3 +109,15 @@ func push_with_local_delay_player_index_and_integer_value_in_seconds(player_inde
 	)
 	bytes_delayer.add_delay_by_milliseconds(bytes, milliseconds_delay)
 	debug_text("pi:" + str(player_index) + " Vi:" + str(integer_value)+" delay:" + str(milliseconds_delay))
+
+
+func _on_int_input_for_arc_raider_on_integer_delay_action_requested_in_milliseconds(integer_value: int, milliseconds_delay: int) -> void:
+	pass # Replace with function body.
+
+
+func _on_int_input_for_10_seconds_ninja_on_integer_action_requested(integer_value: int) -> void:
+	pass # Replace with function body.
+
+
+func _on_play_with_10_seconds_ninja_on_integer_relayed(int_value: int) -> void:
+	pass # Replace with function body.
